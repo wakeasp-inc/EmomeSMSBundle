@@ -18,7 +18,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
  */
 final class EmomeTransport extends AbstractTransport
 {
-    protected const HOST = 'api.allmysms.com';
+    protected const HOST = null;
 
     private $account;
     private $password;
