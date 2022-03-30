@@ -3,4 +3,27 @@
 Provides Emome integration for Symfony Notifier.
 
 ## DSN example
+
+
+## Register the Transport
+
+.env
+```
 EMOME_DSN=emome://Account:Password@default
+```
+
+config\services.yaml
+```
+    WakeaspInc\Emome\EmomeTransportFactory:
+        parent: 'notifier.transport_factory.abstract'
+        tags: [ 'texter.transport_factory' ]
+```
+
+
+config\packages\notifier.yaml
+```
+    ...
+        texter_transports:
+            emome: '%env(EMOME_DSN)%'
+    ...
+```
