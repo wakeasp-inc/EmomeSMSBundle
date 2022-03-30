@@ -2,9 +2,6 @@
 
 Provides Emome integration for Symfony Notifier.
 
-## DSN example
-
-
 ## Register the Transport
 
 .env

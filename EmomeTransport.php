@@ -18,7 +18,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
  */
 final class EmomeTransport extends AbstractTransport
 {
-    protected const HOST = null;
+    protected const HOST = "emome";
 
     private $account;
     private $password;
