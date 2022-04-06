@@ -1,4 +1,4 @@
-# Emome Notifier
+# 中華電信 簡訊 Emome Notifier
 
 Provides Emome integration for Symfony Notifier.
 
