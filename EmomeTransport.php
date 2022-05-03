@@ -48,7 +48,7 @@ final class EmomeTransport extends AbstractTransport
             throw new UnsupportedMessageTypeException(__CLASS__, SmsMessage::class, $message);
         }
 
-        $client = new SMSClient($this->account,$this->password);
+        $client = new SMSClient($this->account,$this->password,$this->client);
 
         try {
             $response = $client->send($message->getSubject(),$message->getPhone());

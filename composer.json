@@ -14,7 +14,7 @@
         "php": ">=7.2.5",
         "symfony/http-client": "^4.3|^5.0|^6.0",
         "symfony/notifier": "^5.0|^6.0",
-        "wakeasp-inc/sms-client": "^1.0.1"
+        "wakeasp-inc/sms-client": "1.0.2"
     },
     "autoload": {
         "psr-4": { "WakeaspInc\\Emome\\": "" },
